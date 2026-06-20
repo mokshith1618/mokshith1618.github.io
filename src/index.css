@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+  /* Centralized Color Palette */
+  --color-ivory: #FDFBF7;
+  --color-leaf: #2D4A22;
+  --color-leaf-light: #4A5D23;
+  --color-sand: #E8E5D9;
+  --color-beige: #F5F5DC;
+  
+  /* You can also define custom font families here if needed */
+}
