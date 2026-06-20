@@ -7,7 +7,7 @@ export default function Contact() {
   const { site_metadata } = portfolioData;
 
   return (
-    <section className="p-8 bg-ivory">
+    <section className="p-4 bg-ivory">
       <div className="flex items-center gap-3 mb-8">
         <ShieldCheck className="w-8 h-8 text-leaf" strokeWidth={2} />
         <h2 className="text-3xl font-bold text-leaf">

@@ -10,13 +10,13 @@ export default function LoadBalancer({ setActiveRoute, activeRoute }){
     { id: 'contact', label: 'Contact' },
   ];
   return (
-    <section className="py-12 flex flex-col items-center">
+    <section className="py-8 flex flex-col items-center">
       
       <motion.div 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-center mb-10"
+        className="text-center mb-6"
       >
         <div className="inline-block px-4 py-2 bg-sand rounded-full mb-4 shadow-sm">
           <span className="text-sm font-mono text-leaf-light font-semibold">

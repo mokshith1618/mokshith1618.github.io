@@ -21,7 +21,7 @@ export default function Projects() {
   };
 
   return (
-    <section className="p-8 bg-ivory">
+    <section className="p-2 bg-ivory">
       <div className="flex items-center gap-3 mb-10">
         <GitCommit className="w-8 h-8 text-leaf" strokeWidth={2} />
         <h2 className="text-3xl font-bold text-leaf">
