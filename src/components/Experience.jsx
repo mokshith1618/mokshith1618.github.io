@@ -6,7 +6,7 @@ export default function Experience() {
   const { experience } = portfolioData;
 
   return (
-    <section className="p-8 bg-ivory"> 
+    <section className="p-2 bg-ivory"> 
       <div className="flex items-center gap-3 mb-6">
         <Server className="w-8 h-8 text-leaf" strokeWidth={1.5} />
         <h2 className="text-3xl font-bold text-leaf">
