@@ -5,6 +5,7 @@ import portfolioData from '../data/data.json';
 export default function LoadBalancer({ setActiveRoute, activeRoute }){
   const routes = [
     { id: 'experience', label: 'Experience' },
+    { id: 'skills', label: 'Tech Stack' },
     { id: 'projects', label: 'Projects' },
     { id: 'education', label: 'Education' },
     { id: 'contact', label: 'Contact' },
