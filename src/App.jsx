@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import portfolioData from './data/data.json';
+import Skills from './components/Skills';
 import { FileText, Terminal, Play, Loader, Server, CheckCircle2 } from 'lucide-react';
 
 function App() {
@@ -212,6 +213,7 @@ function App() {
 
                       <div className="w-full">
                         {activeRoute === 'experience' && <Experience />}
+                        {activeRoute === 'skills' && <Skills />}
                         {activeRoute === 'projects' && <Projects />}
                         {activeRoute === 'education' && <Education />}
                         {activeRoute === 'contact' && <Contact />}

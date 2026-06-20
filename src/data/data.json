@@ -86,5 +86,12 @@
     "AWS Certified Solutions Architect - Associate (SAA-C03)",
     "Kubernetes Fundamentals Certification - The Linux Foundation",
     "Elite Certification in Programming, Data Structures and Algorithms - NPTEL IIT Madras"
-  ]
+  ],
+  "skills": {
+    "languages": ["Python", "Java", "Go", "C", "C++"],
+    "web_and_backend": ["JavaScript", "React", "TypeScript", "Node.js", "Express.js", "Spring Boot", "Maven", "Redis", "Django"],
+    "cloud_and_devops": ["Kubernetes", "Docker", "AWS", "Selenium", "Jenkins", "Prometheus", "Terraform", "GitHub Actions", "Kafka", "OpenStack"],
+    "databases": ["MySQL", "PostgreSQL", "Pandas"],
+    "tools": ["Linux", "Windows", "Git", "JIRA", "Agile/Scrum"]
+  }
 }
