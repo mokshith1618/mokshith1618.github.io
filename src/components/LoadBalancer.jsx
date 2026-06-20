@@ -2,14 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import portfolioData from '../data/data.json';
 
-export default function LoadBalancer({ setActiveRoute }) {
+export default function LoadBalancer({ setActiveRoute, activeRoute }){
   const routes = [
     { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
     { id: 'education', label: 'Education' },
     { id: 'contact', label: 'Contact' },
   ];
-
   return (
     <section className="py-12 flex flex-col items-center">
       
@@ -30,21 +29,26 @@ export default function LoadBalancer({ setActiveRoute }) {
       </motion.div>
 
       <div className="flex flex-wrap justify-center gap-6">
-        {routes.map((route, index) => (
+        {routes.map((route, index) =>{
+        const isActive = activeRoute === route.id;
+        return(
           <motion.button
             key={route.id}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4, delay: index * 0.15 }}
             // Utilizing CSS Variables so Framer Motion respects your theme
-            whileHover={{ scale: 1.05, backgroundColor: "var(--color-leaf)", color: "var(--color-ivory)" }}
+            whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setActiveRoute(route.id)}
-            className="px-8 py-4 bg-white border-2 border-leaf text-leaf font-semibold rounded-lg shadow-sm cursor-pointer transition-colors duration-200"
-          >
+           className={`px-8 py-4 border-2 font-semibold rounded-lg shadow-sm transition-colors duration-200 
+          ${isActive 
+            ? 'bg-leaf text-ivory border-leaf' 
+            : 'bg-white text-leaf border-leaf hover:bg-leaf hover:text-ivory'}`}
+      >
             {route.label}
           </motion.button>
-        ))}
+        );})}
       </div>
 
     </section>

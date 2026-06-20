@@ -37,7 +37,7 @@ export default function Contact() {
           </p>
 
           <a 
-            href={`mokshithsaigadela@gmail.com`} 
+            href="mailto:mokshithsaigadela@gmail.com" 
             className="inline-flex items-center gap-2 px-8 py-4 bg-leaf text-ivory font-bold rounded-lg hover:bg-leaf-light transition-colors mb-8"
           >
             <Mail className="w-5 h-5" /> Initialize Handshake (Email Me)
